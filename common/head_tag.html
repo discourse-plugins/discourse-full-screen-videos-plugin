@@ -1,0 +1,14 @@
+<script type="text/discourse-plugin" version="0.6">
+    const whiteLister = require('pretty-text/white-lister').default;
+    const whiteLister_obj = new whiteLister();
+
+    const arr = [
+      'iframe[webkitallowfullscreen]',
+      'iframe[mozAllowFullScreen]',
+      'iframe[allow]',
+      'iframe[webkitallowfullscreen]',
+      'iframe[src]'
+    ];
+
+    whiteLister_obj.whiteListFeature("full-screen", arr);
+</script>
